@@ -1,0 +1,6 @@
+title = "green lanter"
+stop = 10
+counter = 0
+while counter <= stop:
+    print(counter)
+    counter = counter + 1
