@@ -1,6 +1,8 @@
-histogram = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
-             'p','q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'}
+histogram = {}
 name = input("Please enter a word ")
-print("%s" % (name))
-if name == histogram: 
-    print (name.isalpha())
+for letters in range(len(name)):
+    if name[letters] in histogram:
+      histogram[name[letters]] += 1
+    else:
+        histogram[name[letters]] = 1 
+print(histogram) 
