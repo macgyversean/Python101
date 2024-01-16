@@ -6,16 +6,15 @@ phonebook_dict = {
     }
 }
 print("Electronic Phone Book")
+print("======================")
 lookup = print("1. Look up an entry", 
                "2. Set an entry",
                "3. Delete an entry",
                "4. List all entries",
                "5. Quit"
                )
-user_action = input("Choose an action (1/2/3/4/5): ")
-if user_action == '1. look up an entry':
-    search_name = input(' Enter the persons name.')
-    if search_name in phonebook_dict:
-        print('phone number for {search_name}: {phonebook[search_name]}')
-    else:
-        print('Sorry that person does not exist in this phone book please add.')
+user_action = int(input("What do you want to do (1-5)? "))
+ for  user_action in phonebook_dict['names']:
+    user_action == 1: 
+    search = input("Name: ")
+    print()
