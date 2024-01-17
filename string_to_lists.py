@@ -1,6 +1,12 @@
 six = "jacobs"
 empty = []
 for letters in six: 
-    print range(len(letters))
+    empty.append(letters) 
+    print(letters)
 
-var = ""
+empty.reverse()
+
+e_str = ""
+for letter in empty:
+    e_str = letter
+    print(e_str) 
