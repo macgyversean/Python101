@@ -8,4 +8,4 @@ class Vehicle:
         print('%s %s %s ' % (self.year, self.make, self.model ))
 
 car = Vehicle(year='2015', make='Nissan', model='Leaf', )
-print(car.info())    
+car.info() 

@@ -6,8 +6,8 @@ class Person:
       self.print = print_contact_info
 
     def greet(self, other_person):
-     print('Hello %s, I am %s!' % (other_person.name,  self.name))
-
+     return 'Hello %s, I am %s!' % (other_person.name,  self.name)
+            
     def print_contact_info(self):
        print(Sonny.email, Sonny.phone)
        
@@ -26,4 +26,4 @@ print(Sonny.greet(Jordan))
 print(Jordan.greet(Sonny))
 print(Sonny.email, Sonny.phone)
 print(Jordan.name, Jordan.phone, Jordan.email)
-print(Sonny.print_contact_info())
+Sonny.print_contact_info()
