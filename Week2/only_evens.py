@@ -7,6 +7,6 @@ num = (input("please input a sequence of numbers."))
 myNum = [int(n) for n in num.split()]
 for number in myNum:
     if is_odd(number):
-        print("")
+        print()
     else:
         print(f"{number} is even.")

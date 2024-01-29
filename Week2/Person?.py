@@ -20,10 +20,14 @@ class Jordan:
 
             
 def greet(Jordan, Sonny):
-      print('Hello %s, I am %s!' % (Jordan, Sonny))
+    print('Hello %s, I am %s!' % (Jordan, Sonny))
 
 def greet(Sonny, Jordan):
-      print('Hello %s, I am %s!' % (Sonny, Jordan))
+     print('Hello %s, I am %s!' % (Sonny, Jordan))
 
-print(Sonny("%s, %s " % (self.email, self.phone_number)))
+
+
+print(Sonny)
+
+# print(Sonny("%s, %s " % (self.email, self.phone_number)))
 

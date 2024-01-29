@@ -21,17 +21,19 @@ while True:
     if choice == '1':
         floor_number = input("Enter floor number: ")
         room_number = input("Enter room number: ")
-        num_occupants = int(input("Enter number of occupants: "))
-        occupants = []
-        for i in range(num_occupants):
+
+        if floor_number in hotel and room_number in hotel[floor_number]:
+            print("Room is already occupied.")
+        else:
+            num_occupants = int(input("Enter number of occupants: "))
+            occupants = []
+            for i in range(num_occupants):
                 name = input(f"Enter name of occupant {i+1}: ")
                 occupants.append(name)
 
-        hotel.setdefault(floor_number, {})[room_number] = occupants
-        print("Check-in successful!")
+            hotel.setdefault(floor_number, {})[room_number] = occupants
+            print("Check-in successful!")
 
-        else:
-            
     elif choice == '2':
         floor_number = input("Enter floor number: ")
         room_number = input("Enter room number: ")

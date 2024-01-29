@@ -23,7 +23,7 @@ def roomlist(list, name):
             list.append(name)
             return list
     else: 
-        print(hotel)
+        print(guests)
 
         def edit_guests(check_in):
             for guest in guests:
@@ -31,7 +31,7 @@ def roomlist(list, name):
                     guests.remove(check_in)
                     return guests
             else:
-                guests.append(name)
+                guests[check_in] = check_in
                 return guests
     result = edit_guests(name)
     

@@ -12,7 +12,6 @@ for n in num:
     if n != " ":
         int_list.append(int(n))
 print(int_list)
-# number_list = [11, 20, 42, 97, 23, 10]
 for n in int_list:
     if is_odd(n):
         print(n)
